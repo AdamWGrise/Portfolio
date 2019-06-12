@@ -9,12 +9,42 @@ var nasaBg = function () {
 	}).then(function (response) {
 		console.log('====== BACKGROUND IMAGE RESPONSE =======');
 		console.log(response);
-		$('#bgDiv').css('background-image', 'url(' + response.url + ')');
+		wallpapers.push(response.url);
+		console.log(wallpapers);
 		// temp image if the API isn't working:
 		// $('#bgDiv').css('background-image','url(assets/images/bgTEST.jpg)');
 	});
 };
 
+var wallpapers = ['assets/images/nebula.png'];
+
 $(document).ready(function () {
+	startSlideshow();
+	displayImage();
 	nasaBg();
 });
+
+
+var showImage;
+var count = 0;
+
+function displayImage() {
+	$("#bgDiv").css('background-image', 'url(' +  wallpapers[count] + ')');
+}
+
+function nextImage() {
+	count++;
+	setTimeout(displayImage, 30000);
+
+	if (count === wallpapers.length) {
+		count = 0;
+	}
+}
+
+function startSlideshow() {
+	showImage = setInterval(nextImage, 30000);
+}
+
+function stopSlideshow() {
+	clearInterval(showImage);
+}
