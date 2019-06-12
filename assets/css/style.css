@@ -6,7 +6,6 @@ body {
     color: #eee;
     font-family:  'Archivo Narrow', sans-serif;
     background-color: black;
-    margin-bottom: 80px;
 }
 
 a:link,
@@ -128,13 +127,14 @@ a:active {
     background-color: #343A40;
     color: #bbb;
     font-size: 0.7rem;
-    border-top: 8px solid #4D4EBF;
-    height: 50px;
-    line-height: 40px;
+    height: 35px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
+    opacity: 0.8;
+    margin-top:15px;
+    z-index: -5;
 }
 
 /*********************/
