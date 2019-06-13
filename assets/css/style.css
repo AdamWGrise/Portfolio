@@ -3,10 +3,13 @@
 /*******************/
 
 body {
-    color: #eee;
-    font-family:  'Archivo Narrow', sans-serif;
-    background-color: black;
+    color: #ddd;
+    font-family:  'Open Sans', sans-serif;
+    background-color: #1E5770;
+    background-image: linear-gradient(to bottom right, #1E5770, #333FB5);
 }
+
+/* I don't have any direct links at the moment, but I'm keeping this for future purposes and potential re-vamping of the site. */
 
 a:link,
 a:visited {
@@ -32,21 +35,43 @@ a:active {
     color: #000;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+    font-size:6rem;
+    margin: 200px 0 200px 0;
+}
+
+h3 {
+    font-size:2rem;
+    margin-bottom: 200px;
+}
+
 /*******************/
 /***** CLASSES *****/
 /*******************/
 
 /* .... MAIN CONTENT CLASSES .... */
 
+.heading {
+    text-align: center;
+}
+
 .main-content {
     margin-top: 10px;
     padding: 10px;
-    background-color: #343A40;
-    opacity: 0.8;
+    background-color: #145943;
 }
 
 .main-content-label {
-    color: #eee;
+    color: #ddd;
+}
+
+.introduction {
+    font-size:1.2rem;
+    line-height:1.8rem
 }
 
 #bgDiv {
@@ -62,7 +87,7 @@ a:active {
     padding: 0;
     margin: 0;
     z-index: 0;
-    background-image: url('../images/nebula.png');
+    /* background-image: url('../images/nebula.png'); */
     transition: 10s ease-in-out;
 }
 
@@ -71,7 +96,7 @@ a:active {
     margin: 10px 0;
     height: 2px;
     width: 100%;
-    background-image: linear-gradient(to right, #6363BF, #424280, #6363BF);
+    background-image: linear-gradient(to right, #6b73b8, #8f69b3, #6b73b8);
     ;
 }
 
@@ -105,16 +130,16 @@ a:active {
     text-align: center;
     color: white;
     border: solid #777 2px;
-    background-color: #325;
+    background-color: #6E27B0;
     margin-bottom: 4px;
 }
 
 .label {
-    font-family: Anton, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Asap Condensed', 'Arial Narrow', sans-serif;
     font-size:1rem;
     letter-spacing: 1px;
     color: #eee;
-    background-color: #325;
+    background-color: #6E27B0;
     width: 100%;
     text-align: center;
 }
@@ -124,7 +149,7 @@ a:active {
 /* .... FOOTER CLASSES .... */
 
 .footer {
-    background-color: #343A40;
+    background-color: #145943;
     color: #bbb;
     font-size: 0.7rem;
     height: 35px;

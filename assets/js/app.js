@@ -18,12 +18,12 @@ var nasaBg = function () {
 
 var wallpapers = ['assets/images/nebula.png'];
 
+// I like the idea of the slideshow for the background, but it just didn't feel right for a professional portfolio. I'm keeping the code for possibly a future project that is more art-oriented. For now, just disabling the NASA image query and slideshow functionality.
 $(document).ready(function () {
-	startSlideshow();
-	displayImage();
-	nasaBg();
+	// startSlideshow();
+	// displayImage();
+	// nasaBg();
 });
-
 
 var showImage;
 var count = 0;
