@@ -13,22 +13,27 @@ body {
 
 a:link,
 a:visited {
-    color: #888;
+    color: #ccc;
     text-decoration: none;
+    font-family: 'Asap Condensed', 'Arial Narrow', sans-serif;
+    font-size:0.8rem;
 }
 
 a:after {
     content: '';
     width: 0px;
-    height: 2px;
+    height: 1px;
     display: block;
-    background: #6363BF;
+    background: #aaa;
     position: relative;
     transition: .3s;
+    margin-bottom:3px;
+    margin-left:20%;
 }
 
 a:hover:after {
-    width: 100%;
+    text-align:center;
+    width: 60%;
 }
 
 a:active {
