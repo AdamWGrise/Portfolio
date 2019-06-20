@@ -1,1 +1,1 @@
-## [View portfolio on GitHub Pages](https://adamwgrise.github.io/Portfolio "Portfolio link"){:target="_blank"}
+## <a href=https://adamwgrise.github.io/Portfolio target="_blank">View portfolio on GitHub Pages</a>
